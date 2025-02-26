@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	
+	.main-container {
+		/* h-[540px] */
+		@apply max-w-[450px] p-6 bg-theme-1-main-bg grid gap-8;
+	}
+
+	.theme-switch {
+		@apply flex text-sm font-normal uppercase items-end gap-x-7;
+	}
+	.theme-switch-btn {
+		@apply flex justify-between px-2 col-span-3;
+	}
+	.theme-options {
+		@apply grid grid-cols-3 w-[65px] font-medium;
+	}
+	.theme-label {
+		font-size: .75rem;
+	}
+
+	.circle {
+		@apply rounded-full h-4 w-4 bg-theme-1-key-red-bg;
+	}
+	.circle-container {
+		@apply bg-theme-1-toggle-bg w-[100%] h-6 rounded-full p-1 mt-1 col-span-3;
+	}
+	.calculator-header {
+		@apply text-theme-1-text-white text-2xl font-bold flex w-[100%] justify-between;
+	}
+	.calculator-body {
+		@apply grid grid-cols-4 gap-3 bg-theme-1-screen-bg px-5 py-6 rounded-lg
+		mt-1;
+	}
+	.calculator-screen input{
+		@apply w-[100%] p-6 rounded-lg bg-theme-1-screen-bg text-theme-1-text-white
+		text-3xl font-bold text-right mb-4;
+	}
+	.btn {
+		@apply bg-theme-1-key-light-bg text-theme-1-text-dark font-bold w-[100%]
+		h-[50px] text-2xl rounded-lg shadow-theme-1-key-light-shadow;
+		box-shadow: 0px 4px 0px 0px hsl(28, 16%, 65%);
+	}
+	.reset-btn, .equel-btn {
+		@apply col-span-2 text-theme-1-text-white;
+	}
+	.reset-btn {
+		@apply bg-theme-1-key-bg;
+		box-shadow: 0px 5px 0px 0px hsl(224, 28%, 35%);
+	}
+	.equel-btn {
+		@apply bg-theme-1-key-red-bg;
+		box-shadow: 0px 5px 0px 0px hsl(6, 70%, 34%);
+	}
+	
+}
