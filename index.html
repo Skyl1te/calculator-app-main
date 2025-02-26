@@ -16,9 +16,9 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="grid place-content-center lg:h-[100vh]">
 
-  <main class="main-container ">
+  <main class="main-container">
     <header class="calculator-header">
       <h1>
         calc
@@ -27,9 +27,9 @@
         <p class="theme-label">theme</p>
         <div class="theme-options">
           <div class="theme-switch-btn">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
+            <span id="theme1">1</span>
+            <span id="theme2">2</span>
+            <span id="theme3">3</span>
           </div>
           <div class="circle-container">
         <div class="circle"></div>
@@ -39,37 +39,40 @@
     </header>
     <div class="calculator">
       <div class="calculator-screen">
-        <input type="text"">
+        <input type="text" id="screen">
       </div>
       <div class="calculator-body">
-        <button class="btn " value="7">7</button>
-        <button class="btn " value="8">8</button>
-        <button class="btn " value="9">9</button>
-        <button class="btn " >del</button>
-        <button class="btn " value="4">4</button>
-        <button class="btn " value="5">5</button>
-        <button class="btn " value="6">6</button>
-        <button class="btn " value="+">+</button>
-        <button class="btn " value="1">1</button>
-        <button class="btn " value="2">2</button>
-        <button class="btn " value="3">3</button>
-        <button class="btn " value="-">-</button>
-        <button class="btn " value=".">.</button>
-        <button class="btn " value="0">0</button>
-        <button class="btn " value="/">÷</button>
-        <button class="btn " value="*">&times;</button>
+        <button class="btn" id="num" value="7">7</button>
+        <button class="btn"id="num" value="8">8</button>
+        <button class="btn" id="num" value="9">9</button>
+        <button class="btn del-btn" id="del" value="del">del</button>
+        <button class="btn" id="num" value="4">4</button>
+        <button class="btn" id="num" value="5">5</button>
+        <button class="btn" id="num" value="6">6</button>
+        <button class="btn" id="operator" value="+">+</button>
+        <button class="btn" id="num" value="1">1</button>
+        <button class="btn" id="num" value="2">2</button>
+        <button class="btn" id="num" value="3">3</button>
+        <button class="btn" id="operator" value="-">-</button>
+        <button class="btn" id="dot" value="dot">.</button>
+        <button class="btn" id="num" value="0">0</button>
+        <button class="btn" id="operator" value="/">÷</button>
+        <button class="btn" id="operator" value="*">&times;</button>
         
-        <button class="btn reset-btn ">reset</button>
-        <button class="btn equel-btn ">=</button>
+        <button class="btn reset-btn" id="reset" value="CA">reset</button>
+        <button class="btn equel-btn" id="equel" value="=">=</button>
       </div>
     </div>
   </main>
 
 
   
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    Coded by <a href="https://github.com/Skyl1te" target="_blank">Skyl1te</a>.
+  </div>
+
+  <script src="./src/js/calculator.js"></script>
+  <script src="./src/js/themes.js"></script>
 </body>
 </html>

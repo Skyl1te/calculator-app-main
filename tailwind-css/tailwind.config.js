@@ -2,7 +2,8 @@
 export default {
   content: [
     "../src/css/style.css",
-    "../src/js/index.js",
+    "../src/js/calculator.js",
+    "../src/js/themes.js",
     "../index.html"
   ],
   theme: {
